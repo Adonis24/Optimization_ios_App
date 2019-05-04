@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FriendsTableViewController.tableView(_:cellForRowAt:):FriendsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "names.filter {$0[$0.startIndex] == Character(characters[section]) }.count">
+            </PersistentString>
+            <PersistentString
+               value = "names.filter {$0[$0.startIndex] == Character(characters[indexPath.section]) }[indexPath.row]">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "filteredAllFriends">
+            </PersistentString>
+            <PersistentString
+               value = "filteredFriendsNames">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConteinerView.draw(_:):ConteinerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "containerLayer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsTableViewController.tableView(_:cellForRowAt:):NewsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Array(headers[indexPath.row])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllGroupsTableViewController.tableView(_:cellForRowAt:):AllGroupsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchActive">
+            </PersistentString>
+            <PersistentString
+               value = "searchText">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "filteredAllGroups[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GaleryViewController.onSwipe(_:):GaleryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "index ">
+            </PersistentString>
+            <PersistentString
+               value = "recognizer.direction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FriendsTableViewController.tableView(_:numberOfRowsInSection:):FriendsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "names">
+            </PersistentString>
+            <PersistentString
+               value = "characters">
+            </PersistentString>
+            <PersistentString
+               value = "firstLetters(in: names)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FriendsTableViewCell.shadowView.didset:FriendsTableViewCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

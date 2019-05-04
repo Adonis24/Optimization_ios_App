@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="513" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="VK_lesson_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="513"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="512.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaB-WY-CE2" userLabel="News discription">
+                        <rect key="frame" x="24" y="39" width="303" height="88"/>
+                        <accessibility key="accessibilityConfiguration" identifier="NewsDescription"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="VoC-4d-JKF"/>
+                        </constraints>
+                        <string key="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NrQ-DB-CtY">
+                        <rect key="frame" x="8" y="135" width="320" height="320"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="85S-mZ-Y7J"/>
+                            <constraint firstAttribute="height" constant="320" id="RrK-Su-kt6"/>
+                        </constraints>
+                        <collectionViewLayout key="collectionViewLayout" id="GmJ-Kz-kMt" customClass="NewsCollectionViewLayout" customModule="VK_lesson_2" customModuleProvider="target"/>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzd-Es-y2w" userLabel="Like view" customClass="NewsLikeControl" customModule="VK_lesson_2" customModuleProvider="target">
+                        <rect key="frame" x="8" y="471" width="70" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="aIX-gy-pLs"/>
+                            <constraint firstAttribute="width" constant="70" id="ij3-Xt-u0l"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-DU-fmE" userLabel="Comment view" customClass="NewsCommentControl" customModule="VK_lesson_2" customModuleProvider="target">
+                        <rect key="frame" x="86" y="471" width="70" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="92k-xS-Tp3"/>
+                            <constraint firstAttribute="height" constant="40" id="JfF-Qm-GAX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezb-K8-olK" userLabel="Share view" customClass="NewsShareControl" customModule="VK_lesson_2" customModuleProvider="target">
+                        <rect key="frame" x="164" y="471" width="70" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="6OU-Xi-Qje"/>
+                            <constraint firstAttribute="height" constant="40" id="yJu-Xm-hhb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8m-N5-q8q" userLabel="Eyes view" customClass="NewsEyesControl" customModule="VK_lesson_2" customModuleProvider="target">
+                        <rect key="frame" x="242" y="471" width="70" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="QKn-bW-9g6"/>
+                            <constraint firstAttribute="width" constant="70" id="niR-hT-8jx"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composers" translatesAutoresizingMaskIntoConstraints="NO" id="omq-xA-w90">
+                        <rect key="frame" x="16" y="127" width="319" height="344"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VaB-WY-CE2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="0EX-c8-ld0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="omq-xA-w90" secondAttribute="trailing" id="5b0-1j-CBX"/>
+                    <constraint firstItem="ezb-K8-olK" firstAttribute="top" secondItem="NrQ-DB-CtY" secondAttribute="bottom" constant="16" id="5y7-Pq-bx3"/>
+                    <constraint firstItem="Cqd-DU-fmE" firstAttribute="leading" secondItem="fzd-Es-y2w" secondAttribute="trailing" constant="8" id="AtE-v3-PK9"/>
+                    <constraint firstItem="Cqd-DU-fmE" firstAttribute="top" secondItem="NrQ-DB-CtY" secondAttribute="bottom" constant="16" id="CW6-CO-ATf"/>
+                    <constraint firstItem="fzd-Es-y2w" firstAttribute="top" secondItem="omq-xA-w90" secondAttribute="bottom" id="F6T-yQ-xdB"/>
+                    <constraint firstItem="fzd-Es-y2w" firstAttribute="top" secondItem="NrQ-DB-CtY" secondAttribute="bottom" constant="16" id="Fak-Tb-GNN"/>
+                    <constraint firstItem="omq-xA-w90" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HYA-6k-fLu"/>
+                    <constraint firstItem="VaB-WY-CE2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="J4s-oa-p8f"/>
+                    <constraint firstItem="fzd-Es-y2w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MaU-Co-0Hx"/>
+                    <constraint firstItem="I8m-N5-q8q" firstAttribute="leading" secondItem="ezb-K8-olK" secondAttribute="trailing" constant="8" id="SM3-I6-23P"/>
+                    <constraint firstItem="ezb-K8-olK" firstAttribute="leading" secondItem="Cqd-DU-fmE" secondAttribute="trailing" constant="8" id="Zg8-sx-KaD"/>
+                    <constraint firstItem="NrQ-DB-CtY" firstAttribute="top" secondItem="VaB-WY-CE2" secondAttribute="bottom" constant="8" id="bzR-tp-8HN"/>
+                    <constraint firstItem="omq-xA-w90" firstAttribute="top" secondItem="VaB-WY-CE2" secondAttribute="bottom" id="cCY-V0-HDW"/>
+                    <constraint firstItem="I8m-N5-q8q" firstAttribute="top" secondItem="NrQ-DB-CtY" secondAttribute="bottom" constant="16" id="diD-5E-cW1"/>
+                    <constraint firstItem="NrQ-DB-CtY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ftn-BA-Jqx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VaB-WY-CE2" secondAttribute="trailing" constant="8" id="h8h-5B-ZM2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="NewsCommentView" destination="Cqd-DU-fmE" id="wh6-be-MtL"/>
+                <outlet property="NewsDescription" destination="VaB-WY-CE2" id="bEt-Dm-bzR"/>
+                <outlet property="NewsEyesView" destination="I8m-N5-q8q" id="UQR-fQ-PnR"/>
+                <outlet property="NewsImage" destination="omq-xA-w90" id="ruI-Tu-8Xh"/>
+                <outlet property="NewsLikeView" destination="fzd-Es-y2w" id="rf8-re-T4u"/>
+                <outlet property="NewsShareView" destination="ezb-K8-olK" id="Gw7-o7-Ufb"/>
+            </connections>
+            <point key="canvasLocation" x="484" y="337.78110944527737"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Composers" width="900" height="578.25"/>
+    </resources>
+</document>

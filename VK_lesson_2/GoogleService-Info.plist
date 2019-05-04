@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>672453832118-du90aosf89b875l27p9el9bf059fgu67.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.672453832118-du90aosf89b875l27p9el9bf059fgu67</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCmdMf75zgenSIOOQLKS8YX2ibnUL3qGfE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>672453832118</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Adonis24.VK-lesson-2</string>
+	<key>PROJECT_ID</key>
+	<string>adonis24vk-lesson-2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>adonis24vk-lesson-2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:672453832118:ios:459ce71bbc27a964</string>
+	<key>DATABASE_URL</key>
+	<string>https://adonis24vk-lesson-2.firebaseio.com</string>
+</dict>
+</plist>
