@@ -12,11 +12,13 @@ import RealmSwift
 class Group: Object  {
 
     
-         @objc dynamic var id: Int = 0
-         @objc dynamic var name: String = ""
-         @objc dynamic var photo_50: String = ""
-         @objc dynamic var descrip: String = ""
+    @objc dynamic var id: Int = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var photo_50: String = ""
+    @objc dynamic var descrip: String = ""
+    var news   = List<News>()
     
+     // let groupForNews = LinkingObjects(fromType: News.self, property: "groups")
    // init(json:JSON) {
     convenience  init(json:JSON) {
         self.init()

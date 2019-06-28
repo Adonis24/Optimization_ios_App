@@ -68,6 +68,31 @@ class RealmProvider{
             print(error.localizedDescription)
         }
     }
+//    static func saveNewsForUser( _ news:[News], id:Int, config: Realm.Configuration = Realm.Configuration(deleteRealmIfMigrationNeeded: true))
+//    {
+//        do {
+//            let realm = try Realm(configuration: config)
+//            guard let user = realm.object(ofType: User.self, forPrimaryKey: id) else { return }
+//            try realm.write {
+//                user.news.append(objectsIn: news)
+//            }
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
+//    
+//    static func  saveNewsForGroup( _ news:[News], id:Int, config: Realm.Configuration = Realm.Configuration(deleteRealmIfMigrationNeeded: true))
+//    {
+//        do {
+//            let realm = try Realm(configuration: config)
+//            guard let group = realm.object(ofType: Group.self, forPrimaryKey: id) else { return }
+//            try realm.write {
+//                group.news.append(objectsIn: news)
+//            }
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
 }
 extension IndexPath {
     static func fromRow(_ row: Int) -> IndexPath {

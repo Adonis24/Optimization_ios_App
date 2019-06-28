@@ -36,7 +36,8 @@ class NewsTableAction_Like: UIControl{
         }
     }
     private func setupView(){
-        likeButtom.setImage(UIImage(named: (isLiked == true ? "liked": "notliked")), for: .normal)
+        //likeButtom.setImage(UIImage(named: (isLiked == true ? "liked": "notliked")), for: .normal)
+        likeButtom.setImage(UIImage(named: "liked"), for: .normal)
         likeButtom.addTarget(self, action: #selector(likeAction), for: .touchUpInside)
         self.addSubview(likeView)
         self.likeView.addSubview(likeButtom)

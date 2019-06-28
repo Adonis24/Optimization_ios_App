@@ -8,14 +8,15 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
 class VKService {
-    
+  
     let baseUrl = "https://api.vk.com"
     
     static let sharedManager: SessionManager = {
-        let config = URLSessionConfiguration.default
         
+        let config = URLSessionConfiguration.default
         config.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
         config.timeoutIntervalForRequest = 40
         let manager = Alamofire.SessionManager(configuration: config)
@@ -136,10 +137,39 @@ class VKService {
                 completion?(nil, error)
             }
         }
-        
-//        Alamofire.request(url+path, method: .get, parameters:parameters)
-//            .responseJSON{response in
-//                guard let value = response.value else {return}
-//                print(value)}
+
     }
+    
+    public func getNews(completion: (([News]?, Error?) -> Void)? = nil)
+    {
+//        var profiles=[User]()
+//        var groups=[Group]()
+        let path = "/method/newsfeed.get"
+        let params: Parameters = [
+            "access_token":Session.instance.token,
+            "filters":"post",
+            "count":"10",
+            "v": "5.85"
+        ]
+        let queue = DispatchQueue(label: "com.newsfeed.get.vk.api", qos: .utility, attributes: [.concurrent])
+        VKService.sharedManager.request(baseUrl+path, method: .get, parameters: params)
+            
+            .responseJSON (queue: queue, options: .allowFragments,
+                           completionHandler: {response in
+            
+            switch response.result {
+        
+            case .success(let value):
+                let json = JSON(value)
+                let news = json["response"]["items"].arrayValue.map { News(json: $0) }
+               // let profiles = json["response"]["profiles"].arrayValue.map{ Profiles(json: $0) }
+                //let groups = json["response"]["groups"].arrayValue.map{Group(json: $0)}
+                completion?(news,nil)
+            case .failure(let error):
+                completion?(nil,error)
+            }
+        })
+    }
+    
+    
 }

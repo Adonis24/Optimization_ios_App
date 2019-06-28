@@ -25,7 +25,8 @@ class User: Object {
     @objc dynamic var deactivated: String = ""
     @objc dynamic var descrip: String = ""
     var photos = List<Photo>()
-    
+    var news   = List<News>()
+    //let userForNews = LinkingObjects(fromType: News.self, property: "users")
     //init(json: JSON) {
      convenience  init(json:JSON) {
         self.init()

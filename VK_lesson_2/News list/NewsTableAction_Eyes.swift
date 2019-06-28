@@ -21,7 +21,7 @@ class NewsTableAction_Eyes: UIControl{
         label.textColor = UIColor.black
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 25.0)
-        label.text = String(counter)
+       // label.text = String(counter)
         return label
     }()
     

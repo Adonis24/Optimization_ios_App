@@ -13,7 +13,7 @@ class NewsTableAction_Comment: UIControl{
     private let width: CGFloat = 30.0
     private let height: CGFloat = 30.0
     private let margin: CGFloat = 3.0
-    private var counter: Int = 0
+    public var counter: Int = 0
     
     var commentView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 30.0, height: 30.0)))
     var commentButtom = UIButton(type: .custom)
