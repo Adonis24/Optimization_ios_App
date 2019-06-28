@@ -20,6 +20,7 @@ enum typeRequest {
     case getFotos
     case getGroups
     case getSearchGroups
+    case getNews
     
 }
 
@@ -86,7 +87,22 @@ class NetworkServices{
                             guard let value = response.value else {return}
                             print(value)}
             
-    }
+            
+        case .getNews:
+            let path = "/method/newsfeed.get"
+            let parameters: Parameters = [
+                "access_token":Session.instance.token,
+                "filters":"post",
+                "count":"10",
+                "v":"5.95"
+            ]
+            
+            Alamofire.request(url+path, method: .get, parameters:parameters)
+                .responseJSON{response in
+                    guard let value = response.value else {return}
+                    print(value)}
+            
+        }
         
     }
    
